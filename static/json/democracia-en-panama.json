@@ -1,0 +1,76 @@
+{
+  "categoria": "Democracia básica",
+  "titulo": "¡Descubre la Democracia en Panamá!",
+  "metadatos": {
+    "autor": "Karen Cabrera",
+    "fecha_creacion": "24-03-2025",
+    "ultima_actualizacion": "06-04-2025",
+    "tiempo_lectura_estimado": "3-4 minutos"
+  },
+  "contenido": {
+    "resumen": "La democracia en Panamá va más allá de solo votar. Se trata de la participación activa de todos los ciudadanos en la sociedad. Cada vez que exigimos nuestros derechos, participamos en foros o pedimos cambios, estamos ejerciendo nuestra democracia. ¡Es momento de conocerla y ser parte de un cambio real!",
+    "secciones": [
+      {
+        "subtitulo": "Principios de la democracia",
+        "parrafos": [
+          "La democracia se sostiene sobre principios fundamentales. Estos son los principios básicos que deben cumplirse para que funcione correctamente.",
+          "1. El poder está en el pueblo: Las decisiones importantes las toma la gente, ya sea directamente o eligiendo a personas que las tomen por ellos.",
+          "2. Todos debemos seguir las reglas: Las leyes son para todos por igual, y nadie puede estar por encima de ellas, ni siquiera los gobernantes.",
+          "3. Cada parte del gobierno tiene su rol: El gobierno se divide en tres partes (ejecutivo, legislativo y judicial), y cada una tiene una función distinta, asegurándose de que ninguna parte tenga todo el poder.",
+          "4. Nuestros derechos son importantes: Cada persona tiene derechos que deben ser respetados, como la libertad de hablar, elegir, y vivir sin miedo a ser tratada de manera injusta.",
+          "5. Cada persona puede opinar y participar: En una democracia, todos podemos expresar nuestras ideas y votar para elegir a nuestros representantes, para que el gobierno nos represente bien.",
+          "6. Los gobernantes deben ser honestos y explicar sus decisiones: Las personas que gobiernan deben ser claras con lo que hacen y explicar sus decisiones, para que todos confíen en ellos."
+        ],
+        "imagenes": []
+      },
+      {
+        "subtitulo": "¿Qué Dicen las Estadísticas?",
+        "parrafos": [
+          "Las estadísticas revelan información clave sobre la percepción de la democracia en Panamá."
+        ],
+        "imagenes": [
+          {
+            "url": "",
+            "descripcion": "Estas estadísticas reflejan la realidad de la democracia en Panamá. Es urgente fomentar un sistema más transparente y efectivo que recupere la confianza del pueblo.",
+            "creditos": ""
+          }
+        ]
+      },
+      {
+        "subtitulo": "¡Votar No es Todo! Actúa Todo el Año",
+        "parrafos": [
+          "La democracia no es solo un evento cada cinco años, ¡es una práctica continua! Votar es un momento clave, pero también lo es estar involucrado durante todo el año. Tu participación es clave para asegurarte de que tus derechos sean respetados y de que las decisiones que se toman te representen. Aquí te mostramos cómo puedes actuar:",
+          "1. Participación: Tu voz debe escucharse todo el año. Participa en debates, en foros comunitarios, y haz sentir tu opinión en temas importantes. ¡No basta con votar, hay que estar presente y ser escuchado siempre!",
+          "2. Exigir Transparencia: La democracia solo funciona si hay transparencia. Si algo no va bien, es tu derecho exigir respuestas. No tengas miedo de cuestionar y pedir cambios cuando algo no esté funcionando.",
+          "3. ¡Hazte Escuchar!: Participa activamente en movimientos cívicos, comparte tus ideas en redes sociales, y únase a causas que consideres justas. Cada pequeña acción ayuda a fortalecer la democracia."
+        ],
+        "imagenes": []
+      },
+      {
+        "subtitulo": "¿Qué pasaría en un sistema sin democracia?",
+        "parrafos": [],
+        "imagenes": [
+          {
+            "url": "",
+            "descripcion": "En un sistema sin democracia, se perderían los derechos de elección y libertad de expresión. Las leyes podrían ser injustas, el abuso de poder sería común, y la corrupción crecería, afectando la igualdad y los derechos de todos. Sin democracia, la sociedad perdería su capacidad para exigir cambios y construir un futuro justo.",
+            "creditos": ""
+          }
+        ]
+      }
+    ],
+    "conclusiones": [
+      "La Democracia Solo Crece Si Todos Participamos",
+      "La democracia no es perfecta, pero si todos participamos activamente, podemos mejorarla. No se trata solo de votar cada 5 años, sino de estar involucrado todos los días en las decisiones que afectan a tu comunidad. Juntos podemos construir una democracia más fuerte, justa y transparente."
+    ]
+  },
+  "etiquetas": [
+    "Democracia básica"
+  ],
+  "referencias": [
+    {
+      "titulo": "Pulso de la democracia en Panamá",
+      "autor": "Jon Subinas Garralda, CIEPS & Sergio García Rendón, CIEPS",
+      "año": 2023
+    }
+  ]
+}

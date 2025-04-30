@@ -1,0 +1,341 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<header class="blog-header py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Blog CODEM</h1>
+                    <p class="lead mb-0">Enterate de nuestros logros y hazañas dentro de cada una de nuestras áreas.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Filter Section -->
+    <section class="blog-filter py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="filter-container text-center">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="redes">Redes y tecnología</button>
+                        <button class="filter-btn" data-filter="talleres">Talleres y metodología</button>
+                        <button class="filter-btn" data-filter="giras">Giras académicas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-posts py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Post 1 - Redes -->
+                    <div id="alianzas-redes">
+                        <div class="blog-item" data-category="redes">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/alianza1.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Redes y tecnología</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">11 de marzo, 2025</div>
+                                            <h2 class="blog-title">Instituto de Estudio Democrático</h2>
+                                            <p class="blog-excerpt">El equipo contó con el valioso respaldo del Instituto de Estudios Democráticos (INED), perteneciente al Tribunal Electoral. El Licenciado Sánchez aceptó cordialmente la invitación para participar en un episodio del podcast. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="redes">
+                        <div class="blog-card-horizontal">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="blog-image">
+                                        <img src="{{ url_for('static', filename='img/blog/alianza2.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                        <div class="blog-category">Redes y tecnología</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="blog-content">
+                                        <div class="blog-date">1 de abril, 2025</div>
+                                        <h2 class="blog-title">SENACYT</h2>
+                                        <p class="blog-excerpt">Se concretó una alianza con SENACYT para el cierre del programa. Como parte del apoyo, se recibieron materiales que serán entregados como incentivos a los estudiantes, con el objetivo de reconocer su participación y compromiso durante todo el proceso formativo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-divider"></div>
+                    </div>
+
+                    <div class="blog-item" data-category="redes">
+                        <div class="blog-card-horizontal">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="blog-image">
+                                        <img src="{{ url_for('static', filename='img/blog/podcast/podcast1.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                        <div class="blog-category">Redes y tecnología</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="blog-content">
+                                        <div class="blog-date">17 de abril, 2025</div>
+                                        <h2 class="blog-title">Podcast: ¿CÓMO PODEMOS CONSTRUIR DEMOCRACIA EN PANAMÁ?</h2>
+                                        <p class="blog-excerpt">Construyamos democracia es una iniciativa nacida en el Laboratorio Latinoamericana de Acción Ciudadana destinada a eliminar la brecha que existe entre la juventud y la política. Con la compañía del Magistrado Alfredo Juncá conversamos de democracia y como los jóvenes podemos aportar a su engrandecimiento en Panamá. ¡Acompáñanos a conocer e impulsar esta maravillosa iniciativa!</p>
+                                        <a href="https://www.youtube.com/watch?v=rIlh8ddADJ0" class="blog-link" target="_blank">Ver video</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-divider"></div>
+                    </div>
+                    </div>
+                    <!-- Post 2 - Talleres -->
+                    <div id="talleres">
+                        <div class="blog-item" data-category="talleres">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/talleres1.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Talleres y Metodologías</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">20 de marzo, 2025</div>
+                                            <h2 class="blog-title">Inducción a los becarios seleccionados</h2>
+                                            <p class="blog-excerpt">Se realizó la inducción a los becarios seleccionados, donde se les presentó la iniciativa de CODEM y se destacó su rol fundamental en la ejecución del proyecto. También se les explicó la dinámica de trabajo, las actividades que desarrollarán y se presentó parte del equipo responsable. La jornada permitió generar un ambiente de entusiasmo, compromiso y colaboración. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="talleres">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/talleres2.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Talleres y Metodologías</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">24 de marzo, 2025</div>
+                                            <h2 class="blog-title">Introducción a la Cívica y la Democracia</h2>
+                                            <p class="blog-excerpt">Se realizó la primera sesión del curso con una introducción facilitada por ASPADE, donde los estudiantes recibieron una breve clase enfocada en el debate y el pensamiento crítico. Además, se aplicó un pretest para evaluar conocimientos previos. La jornada incluyó temas clave sobre democracia, civismo, derechos y deberes ciudadanos, y finalizó con una reflexión sobre el papel de los jóvenes en la vida democrática. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="talleres">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/talleres3.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Talleres y Metodologías</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">26 de marzo, 2025</div>
+                                            <h2 class="blog-title">Gobernanza y Gobernabilidad</h2>
+                                            <p class="blog-excerpt">Durante la sesión se abordaron temas como gobernanza, gobernabilidad, funciones del Estado y corrupción, con ejemplos aplicados a Panamá. Los estudiantes participaron en una dinámica de gabinete, donde propusieron soluciones a problemas nacionales. Además, se discutió la transición democrática en Panamá y su impacto en la política actual. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="talleres">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/talleres4.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Talleres y Metodologías</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">31 de marzo, 2025</div>
+                                            <h2 class="blog-title">Instituciones y Políticas Públicas II</h2>
+                                            <p class="blog-excerpt">Los estudiantes aprendieron sobre el proceso legislativo en Panamá y cómo las políticas públicas afectan áreas clave como la educación, salud y seguridad. A través de una dinámica de trabajo en equipos, crearon propuestas legislativas para abordar problemas sociales juveniles. También se discutieron los riesgos de la falta de participación ciudadana en la democracia y cómo los jóvenes pueden influir en la formulación de políticas públicas y en el cambio social. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="talleres">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/talleres5.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Talleres y Metodologías</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">2 de abril, 2025</div>
+                                            <h2 class="blog-title">Ejercicio de la Ciudadanía y Proyecto Final</h2>
+                                            <p class="blog-excerpt">Se exploró la historia del voto en Panamá, la manipulación electoral y el impacto de las redes sociales en la democracia. Los estudiantes participaron en un taller sobre cómo identificar noticias falsas y discutieron el rol de los jóvenes en la defensa de la democracia y los derechos humanos. Al final, se revisaron los proyectos finales, haciendo ajustes y preparándose para su presentación. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+                    </div>
+
+                    <div id="giras">
+                        <div class="blog-item" data-category="giras">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/gira1.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Giras</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">28 de marzo, 2025</div>
+                                            <h2 class="blog-title">Tribunal Electoral</h2>
+                                            <p class="blog-excerpt">La visita al Tribunal Electoral permitió a los estudiantes conocer más sobre el rol de la institución en la democracia panameña, incluyendo el proceso electoral, la obtención de la nacionalidad, la evolución de las cédulas a través de los años y el origen del Tribunal Electoral. Además, los ejecutivos del Tribunal brindaron su apoyo al proyecto, destacando su relevancia y potencial.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="giras">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/gira2.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Giras</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">28 de marzo, 2025</div>
+                                            <h2 class="blog-title">Asamblea Nacional de Panamá</h2>
+                                            <p class="blog-excerpt">Los estudiantes aprendieron sobre la historia de las constituciones y cómo funciona el Pleno de la Asamblea, donde los diputados se organizan por bancadas. También conocieron el proceso legislativo y la importancia del trabajo de los diputados. El diputado Jorge Bloise estuvo presente y respondió preguntas sobre su labor en la Asamblea. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="giras">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/gira3.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Giras</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">28 de marzo, 2025</div>
+                                            <h2 class="blog-title">Defensoría del Pueblo de Panamá</h2>
+                                            <p class="blog-excerpt">En la Defensoría del Pueblo, los estudiantes conocieron su papel en la defensa de los derechos humanos y los mecanismos que existen para denunciar abusos. La visita les permitió reflexionar sobre la importancia de proteger la dignidad y los derechos de todos, así como el rol de esta institución en la promoción de una cultura de respeto y justicia social.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="giras">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/gira4.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Giras</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">28 de marzo, 2025</div>
+                                            <h2 class="blog-title">Contraloría General de la República</h2>
+                                            <p class="blog-excerpt">Los estudiantes aprendieron sobre el rol de esta institución en el control y fiscalización del uso de los recursos públicos. Además, participaron en una dinámica tipo reto, donde debían resolver casos prácticos relacionados con la rendición de cuentas, lo que les permitió aplicar conocimientos y desarrollar habilidades críticas de forma divertida.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="giras">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/gira5.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Giras</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">28 de marzo, 2025</div>
+                                            <h2 class="blog-title">TVN</h2>
+                                            <p class="blog-excerpt">La visita a TVN brindó a los estudiantes una introducción al mundo de los medios de comunicación, con un enfoque en cómo identificar y combatir las fake news. También realizaron un pequeño recorrido por las instalaciones del canal, conociendo de cerca cómo se produce la información que llega a la ciudadanía.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+
+                        <div class="blog-item" data-category="giras">
+                            <div class="blog-card-horizontal">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <div class="blog-image">
+                                            <img src="{{ url_for('static', filename='img/blog/gira6.png')}}" alt="Redes sociales y democracia" class="img-fluid">
+                                            <div class="blog-category">Giras</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="blog-content">
+                                            <div class="blog-date">4 de abril, 2025</div>
+                                            <h2 class="blog-title">Alcaldía de San Miguelito</h2>
+                                            <p class="blog-excerpt">Los participantes visitaron la Alcaldía de San Miguelito, donde fueron recibidos por la alcaldesa. Durante el encuentro, compartieron inquietudes y problemáticas que han observado en su comunidad Arraiján, abordando temas como la seguridad, la falta de agua, el acceso a espacios públicos y el transporte. Fue un espacio valioso de diálogo directo entre jóvenes y autoridades locales.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

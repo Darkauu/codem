@@ -1,0 +1,431 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<header class="about-header py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Quiénes Somos</h1>
+                    <p class="lead mb-0">Conoce al equipo detrás de CODEM y nuestra misión de construir democracia y empoderar a los jóvenes panameños.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mission Section -->
+    <section class="mission-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="mission-content">
+                        <h2 class="section-title">Nuestra Misión</h2>
+                        <p class="mission-text">En CODEM (Construyamos Democracia) trabajamos para fortalecer la cultura democrática en Panamá a través de la educación cívica y el empoderamiento de jóvenes líderes.</p>
+                        <p>Buscamos crear espacios de participación ciudadana donde los jóvenes puedan desarrollar habilidades de liderazgo, pensamiento crítico y compromiso cívico, convirtiéndose en agentes de cambio para sus comunidades y el país.</p>
+
+                        <h3 class="mt-4">Nuestros Valores</h3>
+                        <div class="values-container">
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="value-text">
+                                    <h4>Participación</h4>
+                                    <p>Promovemos la participación activa y significativa de todos los ciudadanos.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+                                    </svg>
+                                </div>
+                                <div class="value-text">
+                                    <h4>Innovación</h4>
+                                    <p>Buscamos soluciones creativas para los desafíos democráticos actuales.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                                    </svg>
+                                </div>
+                                <div class="value-text">
+                                    <h4>Integridad</h4>
+                                    <p>Actuamos con transparencia, honestidad y responsabilidad en todo lo que hacemos.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+                                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+                                    </svg>
+                                </div>
+                                <div class="value-text">
+                                    <h4>Inclusión</h4>
+                                    <p>Valoramos la diversidad y promovemos la participación de todos los sectores de la sociedad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mission-image">
+                        <img src="../static/img/complete_group.jpg" alt="Equipo CODEM en acción" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+<!--    <section class="history-section py-5 bg-light">-->
+<!--        <div class="container">-->
+<!--            <div class="row justify-content-center">-->
+<!--                <div class="col-lg-8 text-center">-->
+<!--                    <h2 class="section-title">Nuestra Historia</h2>-->
+<!--                    <p class="mb-4">CODEM nació en 2018 como una iniciativa de un grupo de jóvenes panameños preocupados por el futuro democrático del país y la baja participación ciudadana entre la juventud.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="timeline">-->
+<!--                <div class="timeline-item">-->
+<!--                    <div class="timeline-dot"></div>-->
+<!--                    <div class="timeline-content">-->
+<!--                        <h3>2018</h3>-->
+<!--                        <p>Fundación de CODEM por un grupo de estudiantes universitarios comprometidos con el fortalecimiento democrático.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="timeline-item">-->
+<!--                    <div class="timeline-dot"></div>-->
+<!--                    <div class="timeline-content">-->
+<!--                        <h3>2019</h3>-->
+<!--                        <p>Lanzamiento del primer programa de formación en liderazgo democrático para jóvenes de comunidades rurales.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="timeline-item">-->
+<!--                    <div class="timeline-dot"></div>-->
+<!--                    <div class="timeline-content">-->
+<!--                        <h3>2020</h3>-->
+<!--                        <p>Adaptación de nuestros programas al entorno digital debido a la pandemia, alcanzando a más de 1,000 jóvenes en tod el país.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="timeline-item">-->
+<!--                    <div class="timeline-dot"></div>-->
+<!--                    <div class="timeline-content">-->
+<!--                        <h3>2021</h3>-->
+<!--                        <p>Reconocimiento nacional como organización juvenil destacada en promoción de la participación ciudadana.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="timeline-item">-->
+<!--                    <div class="timeline-dot"></div>-->
+<!--                    <div class="timeline-content">-->
+<!--                        <h3>2022</h3>-->
+<!--                        <p>Expansión de programas a todas las provincias de Panamá y establecimiento de alianzas con organizaciones internacionales.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="timeline-item">-->
+<!--                    <div class="timeline-dot"></div>-->
+<!--                    <div class="timeline-content">-->
+<!--                        <h3>2023</h3>-->
+<!--                        <p>Lanzamiento de la plataforma digital de educación cívica y desarrollo de nuevos programas de formación.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <!-- Team Section -->
+    <section class="team-section py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Nuestro Equipo</h2>
+                    <p class="lead">Conoce a las personas comprometidas que trabajan día a día para construir una democracia más fuerte en Panamá.</p>
+                </div>
+            </div>
+
+            <!-- Team Photo -->
+            <div class="team-photo mb-5">
+                <img src="../static/img/members_banner.jpg" alt="Equipo completo de CODEM" class="img-fluid rounded shadow mx-auto d-block">
+                <div class="photo-caption text-center mt-3">
+                    <p class="fst-italic">Equipo CODEM durante nuestra primera reunión en el LLAC 2025.</p>
+                </div>
+            </div>
+
+            <!-- Leadership Team -->
+            <h3 class="team-subtitle text-center mb-4">Equipo Directivo</h3>
+            <div class="row g-4 mb-5">
+                <!-- Coordinadora General -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="{{ url_for('static', filename='img/members/180.png')}}" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h4>Mélady Pinzón</h4>
+                            <p class="member-position">Coordinadora General</p>
+                            <p class="member-bio">La mente estratégica detrás de CODEM.<br>Mélady lidera con pasión, asegurando que cada parte del proyecto funcione como un engranaje perfecto.</p>
+                            <div class="member-social">
+<!--                                <a href="#" class="social-link">-->
+<!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">-->
+<!--                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>-->
+<!--                                    </svg>-->
+<!--                                </a>-->
+<!--                                <a href="#" class="social-link">-->
+<!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">-->
+<!--                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>-->
+<!--                                    </svg>-->
+<!--                                </a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vocera -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="{{ url_for('static', filename='img/members/170.png')}}" alt="Subdirectora" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h4>Angelyne de Gracia</h4>
+                            <p class="member-position">Vocera</p>
+                            <p class="member-bio">Angelyne es quien lleva nuestro mensaje a más personas, conectando con aliados, instituciones y, sobre todo, con los jóvenes que buscan hacer la diferencia.</p>
+                            <div class="member-social">
+<!--                                <a href="#" class="social-link">-->
+<!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">-->
+<!--                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>-->
+<!--                                    </svg>-->
+<!--                                </a>-->
+<!--                                <a href="#" class="social-link">-->
+<!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">-->
+<!--                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>-->
+<!--                                    </svg>-->
+<!--                                </a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secretario -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="{{ url_for('static', filename='img/members/160.png')}}" class="img-fluid">
+                        </div>
+                        <div class="member-info">
+                            <h4>Salomón Natera</h4>
+                            <p class="member-position">Secretario</p>
+                            <p class="member-bio">Salomón se encarga de que cada detalle esté en orden, coordinando reuniones, documentación y asegurando que las ideas se conviertan en acciones concretas.</p>
+                            <div class="member-social">
+<!--                                <a href="#" class="social-link">-->
+<!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">-->
+<!--                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>-->
+<!--                                    </svg>-->
+<!--                                </a>-->
+<!--                                <a href="#" class="social-link">-->
+<!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">-->
+<!--                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>-->
+<!--                                    </svg>-->
+<!--                                </a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team by Areas -->
+            <div class="team-areas">
+                <!-- Área de Educación -->
+                <div class="team-area mb-5">
+                    <h3 class="area-title">Supervisión de Impacto</h3>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-member-small">
+                                <img src="{{ url_for('static', filename='img/members/140.png')}}" alt="Miembro del equipo" class="img-fluid rounded-circle">
+                                <h5>Melany Acevedo</h5>
+                                <p class="member-position-small">Coordinadora de Talleres</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-member-small">
+                                <img src="{{ url_for('static', filename='img/members/130.png')}}" alt="Miembro del equipo" class="img-fluid rounded-circle">
+                                <h5>Cristina Salazar</h5>
+                                <p class="member-position-small">Especialista en Contenidos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Área de Investigación -->
+                <div class="team-area mb-5">
+                    <h3 class="area-title">Área de Tecnología</h3>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-member-small">
+                                <img src="{{ url_for('static', filename='img/members/150.png')}}" alt="Miembro del equipo" class="img-fluid rounded-circle">
+                                <h5>Denise Alváez</h5>
+                                <p class="member-position-small">Asistente de Investigación</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-member-small">
+                                <img src="{{ url_for('static', filename='img/members/110.png')}}" alt="Miembro del equipo" class="img-fluid rounded-circle">
+                                <h5>Alejandro Pinzón</h5>
+                                <p class="member-position-small">Desarrollador Full-Stack</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-member-small">
+                                <img src="{{ url_for('static', filename='img/members/120.png')}}" alt="Miembro del equipo" class="img-fluid rounded-circle">
+                                <h5>Karen Cabrera</h5>
+                                <p class="member-position-small">Investigadora Principal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Área de Comunicación -->
+                <div class="team-area mb-5">
+                    <h3 class="area-title">Área de Redes Sociales</h3>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-member-small">
+                                <img src="{{ url_for('static', filename='img/members/200.png')}}" alt="Miembro del equipo" class="img-fluid rounded-circle">
+                                <h5>Melanie Camaño</h5>
+                                <p class="member-position-small">Coordinadora de Contenido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Presupuesto-->
+                <div class="team-area mb-5">
+                    <h3 class="area-title">Presupuesto</h3>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-member-small">
+                                <img src="{{ url_for('static', filename='img/members/190.png')}}" alt="Miembro del equipo" class="img-fluid rounded-circle">
+                                <h5>Bryan Rodríguez</h5>
+                                <p class="member-position-small">Coordinador de Presupuesto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Nuestros Logros</h2>
+                    <p class="lead">A lo largo de nuestra trayectoria, hemos alcanzado importantes hitos que nos impulsan a seguir trabajando.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+                            </svg>
+                        </div>
+                        <h3>+25</h3>
+                        <p>Jóvenes capacitados en democracia y participación ciudadana</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                        </div>
+                        <h3>2 Provincias</h3>
+                        <p>Presencia en todas las provincias de Panamá con programas activos</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                            </svg>
+                        </div>
+                        <h3>1 Reconocimiento</h3>
+                        <p>Reconocimientos nacionales dentro de las escuelas por nuestra labor en educación cívica</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="partners-title">Nuestros Aliados</h2>
+                <p class="partners-subtitle">Trabajamos en colaboración con organizaciones comprometidas con el fortalecimiento de la democracia y la educación cívica en Panamá.</p>
+            </div>
+        </div>
+
+        <!-- Versión con Flexbox -->
+        <div class="partners-logo-container">
+            <!-- Logo 1 -->
+            <div class="partner-logo">
+                <img src="{{ url_for('static', filename='img/allies/alcaldia_pa.png')}}" alt="Ministerio de Educación">
+            </div>
+
+            <div class="partner-logo">
+                <img src="{{ url_for('static', filename='img/allies/aspade.png')}}" alt="Ministerio de Educación">
+            </div>
+
+            <div class="partner-logo">
+                <img src="{{ url_for('static', filename='img/allies/cess.png')}}" alt="Ministerio de Educación">
+            </div>
+
+            <div class="partner-logo">
+                <img src="{{ url_for('static', filename='img/allies/ined.png')}}" alt="Ministerio de Educación">
+            </div>
+
+            <div class="partner-logo">
+                <img src="{{ url_for('static', filename='img/allies/meduca.png')}}" alt="Ministerio de Educación">
+            </div>
+
+            <div class="partner-logo">
+                <img src="{{ url_for('static', filename='img/allies/senacyt.png')}}" alt="Ministerio de Educación">
+            </div>
+
+            <div class="partner-logo">
+                <img src="{{ url_for('static', filename='img/allies/tribunal_electoral.png')}}" alt="Ministerio de Educación">
+            </div>
+
+            <div class="partner-logo">
+                <img src="{{ url_for('static', filename='img/allies/tvn_media.png')}}" alt="Ministerio de Educación">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">¿Quieres unirte a nuestro equipo?</h2>
+                    <p class="lead mb-4">Estamos siempre en búsqueda de personas comprometidas con la democracia y el desarrollo de Panamá.</p>
+                    <a class="btn btn-light btn-outline-light" href="mailto:codem.pa@gmail.com">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

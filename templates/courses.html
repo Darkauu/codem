@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <header class="courses-header py-5 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Nuestros Cursos</h1>
+            <p class="lead">Explora nuestros cursos interactivos sobre democracia y participación ciudadana.</p>
+        </div>
+    </header>
+
+    <!-- Navbar de categorías -->
+    <div class="courses-categories mb-4 text-center">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" data-filter="all">Todos los cursos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-filter="Democracia">Democracia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-filter="Participación">Participación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-filter="Liderazgo">Liderazgo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-filter="Política">Política</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Cursos -->
+    <section class="courses-section py-5">
+        <div class="container">
+            <div class="row justify-content-center gap-3">
+
+                <!-- Curso 1 -->
+                <div class="col-md-12 course-card show" data-category="Democracia">
+                    <div class="card">
+                        <div class="image-container">
+                          <img src="/placeholder.svg?height=200&width=200" alt="Card image">
+                        </div>
+                        <div class="content">
+                          <div class="text-content">
+                            <h2>Democracia</h2>
+                            <p>This is a subtitle or description for the card. It provides additional information about the content.</p>
+                          </div>
+                          <div class="button-container">
+                            <button>Action</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="col-md-12 course-card show" data-category="Participación">
+                    <div class="card">
+                        <div class="image-container">
+                          <img src="/placeholder.svg?height=200&width=200" alt="Card image">
+                        </div>
+                        <div class="content">
+                          <div class="text-content">
+                            <h2>Participación</h2>
+                            <p>This is a subtitle or description for the card. It provides additional information about the content.</p>
+                          </div>
+                          <div class="button-container">
+                            <button>Action</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="col-md-12 course-card show" data-category="Política">
+                    <div class="card">
+                        <div class="image-container">
+                          <img src="/placeholder.svg?height=200&width=200" alt="Card image">
+                        </div>
+                        <div class="content">
+                          <div class="text-content">
+                            <h2>Política</h2>
+                            <p>This is a subtitle or description for the card. It provides additional information about the content.</p>
+                          </div>
+                          <div class="button-container">
+                            <button>Action</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Curso 4 -->
+                <div class="col-md-12 course-card show" data-category="Liderazgo">
+                    <div class="card">
+                        <div class="image-container">
+                          <img src="/placeholder.svg?height=200&width=200" alt="Card image">
+                        </div>
+                        <div class="content">
+                          <div class="text-content">
+                            <h2>Liderazgo</h2>
+                            <p>This is a subtitle or description for the card. It provides additional information about the content.</p>
+                          </div>
+                          <div class="button-container">
+                            <button>Action</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Curso 5 -->
+                <div class="col-md-12 course-card show" data-category="Política">
+                    <div class="card">
+                        <div class="image-container">
+                          <img src="/placeholder.svg?height=200&width=200" alt="Card image">
+                        </div>
+                        <div class="content">
+                          <div class="text-content">
+                            <h2>Politica</h2>
+                            <p>This is a subtitle or description for the card. It provides additional information about the content.</p>
+                          </div>
+                          <div class="button-container">
+                            <button>Action</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

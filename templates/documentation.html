@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <!--Document Template-->
+    <!--    <div class="col-md-6">-->
+    <!--        <div class="doc-card h-100" data-category="#category">-->
+    <!--            <h3 class="h5">Titulo</h3>-->
+    <!--            <p>Descripción</p>-->
+    <!--            <a href=""-->
+    <!--               class="btn btn-primary"-->
+    <!--               download-->
+    <!--               target="_blank">-->
+    <!--               Descargar PDF-->
+    <!--            </a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+
+    <!-- Main Content -->
+    <main class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-4 sidebar py-4">
+                <h4 class="mb-4 ps-3">Categorías</h4>
+                <div class="nav flex-column">
+                    <!--Categorías-->
+                    <a href="#" class="nav-link active">Ver todas</a>
+                    <a href="#democracia-basica" class="nav-link active">Democracia Básica</a>
+                    <a href="#participacion-ciudadana" class="nav-link">Participación Ciudadana</a>
+                    <a href="#sistema-electoral" class="nav-link">Sistema Electoral</a>
+                    <a href="#derechos-deberes" class="nav-link">Derechos y Deberes</a>
+                    <a href="#gobierno-instituciones" class="nav-link">Gobierno e Instituciones</a>
+                    <a href="#recursos-educativos" class="nav-link">Recursos Educativos</a>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="col-lg-9 col-md-8 content-area py-4">
+                <!-- Search Bar -->
+                <div class="search-container mb-5">
+                    <h1 class="display-5 fw-bold mb-3">Documentación</h1>
+                    <div class="search-bar">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Buscar documentos..." aria-label="Buscar documentos">
+                            <button class="btn btn-primary btn-lg" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Documentation Content -->
+                <div class="documentation-content">
+                    <!-- Democracia Básica -->
+                    <section id="democracia-basica" class="doc-section mb-5">
+                        <h2 class="section-title">Democracia Básica</h2>
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6">
+                                <div class="doc-card h-100" data-category="democracia-basica">
+                                    <h3 class="h5">Tipos de democracia</h3>
+                                    <p>Este documento presenta, a través de un formato de cómic o caricatura, una explicación clara y accesible sobre los diferentes tipos de democracia.</p>
+                                    <a href="https://drive.google.com/file/d/1uOFfO4g23yx_IgEvh2SqxsI7yohYHZGY/view?usp=sharing"
+                                       class="btn btn-primary"
+                                       download
+                                       target="_blank">
+                                       Descargar PDF
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="doc-card h-100" data-category="democracia-basica">
+                                    <h3 class="h5">Democracia en Panamá</h3>
+                                    <p>Este articulo ofrece una visión general sobre la democracia en Panamá, explicando su origen, funcionamiento y principales características.</p>
+                                    <a href="/democracia-en-panama" class="btn btn-outline-primary">Leer documento</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Participación Ciudadana -->
+                    <section id="participacion-ciudadana" class="doc-section mb-5">
+                        <h2 class="section-title">Participación Ciudadana</h2>
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6">
+                                <div class="doc-card h-100" data-category="democracia-basica">
+                                    <h3 class="h5">El poder del liderazgo</h3>
+                                    <p>Este artículo informativo explora el poder del liderazgo, destacando sus características, tipos y el impacto que puede tener en distintos contextos.</p>
+                                    <a href="https://drive.google.com/file/d/1CuU_Ls9nqxf0QEO8u4BmuvR5PP2L_4YD/view?usp=sharing"
+                                       class="btn btn-primary"
+                                       download
+                                       target="_blank">
+                                       Descargar PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Sistema Electoral -->
+                    <section id="sistema-electoral" class="doc-section mb-5">
+                        <h2 class="section-title">Sistema Electoral</h2>
+                        <div class="row g-4 mt-2">
+
+                        </div>
+                    </section>
+
+                    <!-- Derechos y Deberes -->
+                    <section id="derechos-deberes" class="doc-section mb-5">
+                        <h2 class="section-title">Derechos y Deberes</h2>
+                        <div class="row g-4 mt-2">
+                        </div>
+                    </section>
+
+                    <!-- Gobiernos e Intituciones -->
+                    <section id="gobiernos-instituciones" class="doc-section mb-5">
+                        <h2 class="section-title">Gobierno e Intituciones</h2>
+                        <div class="row g-4 mt-2">
+
+                        </div>
+                    </section>
+
+                    <!-- Recursos Educativos -->
+                    <section id="recursos-educativos" class="doc-section mb-5">
+                        <h2 class="section-title">Recursos Educativos</h2>
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6">
+                                <div class="doc-card h-100">
+                                    <h3 class="h5">Participación, Democracia e Institucionalidad</h3>
+                                    <p>Este documento aborda de manera clara y concisa qué es la participación ciudadana, por qué es fundamental en una democracia y para qué sirve dentro de una institucionalidad sólida.</p>
+                                    <a href="https://drive.google.com/file/d/1qA4FFAHCgc9dPpfk0X82h8xKSYZJOENj/view?usp=sharing"
+                                       class="btn btn-primary"
+                                       download
+                                       target="_blank">
+                                       Descargar PDF
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="doc-card h-100">
+                                    <h3 class="h5">Pasos para sacar la cédula</h3>
+                                    <p>Este documento explica de forma sencilla y ordenada los pasos necesarios para obtener la cédula de identidad personal en Panamá.</p>
+                                    <a href="https://drive.google.com/file/d/1Fb_uewUF4GhPlASunSKPW9kzNz31sQ_i/view?usp=sharing"
+                                       class="btn btn-primary"
+                                       download
+                                       target="_blank">
+                                       Descargar PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Más secciones pueden ser expandidas según sea necesario -->
+<!--                    <div class="text-center mt-5">-->
+<!--                        <a href="#" class="btn btn-primary">Ver más documentos</a>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
